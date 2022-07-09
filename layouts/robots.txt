@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://perfectlighthousescores.com
+Sitemap: https://perfectlighthousescores.com/sitemap.xml
