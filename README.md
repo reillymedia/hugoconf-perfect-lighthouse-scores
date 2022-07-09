@@ -6,3 +6,5 @@
 - img processing inspiration from Laura Kalbag
 
 - Menu help from Agata Reilly
+
+- View the live Site https://perfectlighthousescores.com
