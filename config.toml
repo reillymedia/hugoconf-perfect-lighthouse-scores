@@ -2,6 +2,9 @@ baseURL = 'https://perfectlighthousescores.com'
 languageCode = 'en-us'
 title = 'Perfect LightHouse Scores'
 theme = 'perfecttheme'
-description = 'How to achieve perfect lighthouse scores.'
 enableRobotsTXT = true
 author = 'Scott Reilly'
+[Params]
+    favicon = '/assets/images/favicon.svg'
+    author = 'Scott Reilly'
+    description = 'How to achieve perfect lighthouse scores.'
