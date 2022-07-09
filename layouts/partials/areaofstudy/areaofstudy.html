@@ -1,0 +1,97 @@
+<!--Perfecting Lighthouse's Performance Audit-->
+
+<section class="areas-of-study">
+    <h1>Perfecting a Lighthouse Performance Audit</h1>
+        <div class= "study-container">
+            <div class="container" id="First Contentful Paint (FCP)">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/first-contentful-paint.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Speed Up First Contentful Paint">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Software Engineering course-software" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>First Contentful Paint (FCP)</h2>
+                <span class="course">10% Weight on Overall Score</span>
+                <span class="classes">Tips for maximizing FCP performance score</span>
+                </div>
+            </a></div>
+            <div class="container" id="Speed Up Largest Contentful Paint">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/largest-contentful-paint-lcp.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Speed Up Largest Contentful Paint">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Course Design" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Largest Contentful Paint (LCP)</h2>
+                <span class="course">25% Weight on Overall Score</span>
+                <span class="classes">Fix how long it takes the largest visible element on the site to be rendered</span>
+                </div>
+            </a> </div>
+            <div class="container" id="Speed Index (SI">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/course-computer-art.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Speed Up First Contentful Paint">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="First Contentful Paint" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Speed Index (SI)</h2>
+                <span class="course">10% Weight on Overall Score</span>
+                <span class="classes">How to make content load blazing fast.</span>
+                </div>
+            </a></div>
+            <div class="container" id="Speed Up Time to Interactive (TTI)">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/time-to-interactive.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Speed Up Time to Interactive (TTI)">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Speed Up Time to Interactive (TTI)" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Time to Interactive (TTI)</h2>
+                <span class="course">10% Weight on Overall Score</span>
+                <span class="classes">Minimize the time between the FCP and the TTI.</span>
+                </div>
+            </a></div>
+            <div class="container" id="Cumulative Layout Shift (CLS)">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/cumulative-layout-shift.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Cumulative Layout Shift (CLS) Help">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Cumulative Layout Shift (CLS) Help" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Cumulative Layout Shift (CLS)</h2>
+                <span class="course">15% Weight on Overall Score</span>
+                <span class="classes">Shifts in your layouts loose customers</span>
+                </div>
+            </a></div>
+            <div class="container" id="Total Blocking Time (TBT)">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/total-blocking-time.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Total Blocking Time (TBT) Help">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Total Blocking Time (TBT) Help" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Total Blocking Time (TBT)</h2>
+                <span class="course">30% Weight on Overall Score</span>
+                <span class="classes">By improving TBT you usually also improve First Input Display </span>
+                </div>
+            </a></div>
+        </div>
+</section>

@@ -1,0 +1,51 @@
+<!--Perfecting Lighthouse's SEO Audit-->
+
+<section class="areas-of-study">
+    <h1>Perfecting a SEO Audit</h1>
+        <div class= "study-container">
+            <div class="container" id="meta-description">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/include-basic-meta-description.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Include Basic Meta Data">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Include Basic Meta Data" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Include Basic Meta Data</h2>
+                <span class="course">This includes Titles, descriptions, links are descriptive.</span>
+                </div>
+            </a></div>
+            <div class="container" id="next-gen-format">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/saving-images-in-next-gen-format.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Serve Images in Next Gen Format">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Serve Images in Next Gen Format" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Serve Images in Next Gen Format</h2>
+                <span class="course">Hugo's image processing is fantastic for serving next gen images.</span>
+                <span class="classes">Images that load fast are essential.</span>
+                </div>
+            </a></div>
+            <div class="container" id="proper-elements">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/including-proper-elements.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Including Proper Elements">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Including Proper Elements" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Including Proper Elements</h2>
+                <span class="course">Elements like "alt" or "hreflang" or "rel=canonical"</span>
+                <span class="classes">These better describe the web page.</span>
+                </div>
+            </a> </div>
+        </div>
+</section>

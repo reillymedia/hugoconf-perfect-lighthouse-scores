@@ -1,0 +1,8 @@
+{{ "<!--Favicon-->" | safeHTML }}
+{{ $iconsrc := readDir "/assets/icons" }}
+{{ $icons := slice }}
+{{ range $iconsrc }}
+  {{ $icon :=  resources.Get (printf "icons/%s" .Name ) | resources.ExecuteAsTemplate  (printf "icons/%s" .Name) $ }}
+  {{ $icons = $icons | append $icon  }}
+{{ end }}
+<link rel="icon" href="{{ range $icons }}{{.Permalink}}{{ end }}" type="image/svg+xml" sizes="any" />

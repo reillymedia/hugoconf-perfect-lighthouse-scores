@@ -1,0 +1,97 @@
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="index,all,follow">
+
+{{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+<meta name="googlebot" content="index,follow,snippet,archive">{{ if .IsHome}}
+<title>{{ .Title }}</title>
+<meta property="og:title" content="{{ .Title }}" />
+<meta name="twitter:title" content="{{ .Title }}" />
+<meta itemprop="name" content="{{ .Title }}" />
+<meta name="application-name" content="{{ .Title }}" />
+<meta property="og:site_name" content="{{ .Site.Params.site_name }}" />{{else}}
+<title>{{ if .Params.Title}}{{ .Params.Title }} | {{.Site.Title}}{{else}}{{.Title}} Page{{ if .IsNode }}{{ if gt .Paginator.PageNumber 1 }} {{ .Paginator.PageNumber }}{{ end }} | {{.Site.Title}}{{ end }}{{end}}</title>
+<meta property="og:title" content="{{ if .Params.Title}}{{ .Params.title }} | {{.Site.Title}}{{else}}{{.Title}} Page{{ if .IsNode }}{{ if gt .Paginator.PageNumber 1 }} {{ .Paginator.PageNumber }}{{ end }} | {{.Site.Title}}{{ end }}{{end}}" />
+<meta name="twitter:title" content="{{ if .Params.Title}}{{ .Params.title }} | {{.Site.Title}}{{else}}{{.Title}} Page{{ if .IsNode }}{{ if gt .Paginator.PageNumber 1 }} {{ .Paginator.PageNumber }}{{ end }} | {{.Site.Title}}{{ end }}{{end}}" />
+<meta itemprop="name" content="{{ if .Params.Title}}{{ .Params.title }} | {{.Site.Title}}{{else}}{{.Title}} Page{{ if .IsNode }}{{ if gt .Paginator.PageNumber 1 }} {{ .Paginator.PageNumber }}{{ end }} | {{.Site.Title}}{{ end }}{{end}}" />
+<meta name="application-name" content="{{ if .Params.Title}}{{ .Params.title }} | {{.Site.Title}}{{else}}{{.Title}} Page{{ if .IsNode }}{{ if gt .Paginator.PageNumber 1 }} {{ .Paginator.PageNumber }}{{ end }} | {{.Site.Title}}{{ end }}{{end}}" />
+<meta property="og:site_name" content="{{ .Site.Params.site_name }}" />{{ end }}
+<meta name="description" content="{{ if .Params.description }}{{ .Params.description}}{{ else}}Learn more about {{ if .Title }}{{ .Title}}. We can help speed your website up.{{end}}{{end}}" />
+<meta itemprop="description" content="{{ if .Params.description }}{{ .Params.description}}{{ else}}Learn more about {{ if .Title }}{{ .Title}}. We can help speed your website up.{{end}}{{end}}" />
+<meta property="og:description" content="{{ if .Params.description }}{{ .Params.description}}{{ else}}Learn more about {{ if .Title }}{{ .Title}}. We can help speed your website up.{{end}}{{end}}" />
+<meta name="twitter:description" content="{{ if .Params.description }}{{ .Params.description}}{{ else}}Learn more about {{ if .Title }}{{ .Title}}. We can help speed your website up.{{end}}{{end}}" />
+<base href="{{ .Permalink }}">
+<link rel="canonical" href="{{ .Permalink }}"  /> 
+<meta name="url" content="{{ .Permalink }}" />
+<meta name="twitter:url" content="{{ .Permalink }}" /> 
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:locale" content="{{ .Site.LanguageCode }}">
+<meta name="language" content="{{ .Site.LanguageCode }}">{{ with .Site.Params.default_image }} 
+  <meta itemprop="image" content="{{ . | absURL }}" />
+  <meta property="og:image" content="{{ . | absURL }}" /> 
+  <meta name="twitter:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image:src" content="{{ . | absURL }}" /> {{ else }}
+  <meta itemprop="image" content="{{ .Params.featured_image | absURL }}" />
+  <meta property="og:image" content="{{ .Params.featured_image | absURL }}" />
+  <meta name="twitter:image" content="{{ .Params.featured_image | absURL }}" />
+  <meta name="twitter:image:src" content="{{ .Params.featured_image | absURL }}" /> {{ end }}
+<meta property="og:updated_time" content={{ .Lastmod.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+<link rel="sitemap" type="application/xml" title="Sitemap" href="{{ .Site.BaseURL }}sitemap.xml" /> 
+<!-- To make sure this renders only in the article page, we check the section -->
+{{ if eq .Section "blog" }} 
+  <!-- Pagination meta tags for list pages only -->
+  {{ $paginator := .Paginate (where .Pages "Section" "blog") }}
+  {{ if $paginator }}
+    <link rel="first" href="{{ $paginator.First.URL }}">
+    <link rel="last" href="{{ $paginator.Last.URL }}">
+    {{ if $paginator.HasPrev }}
+      <link rel="prev" href="{{ $paginator.Prev.URL }}">
+    {{end }}
+    {{ if $paginator.HasNext }}
+      <link rel="next" href="{{ $paginator.Next.URL }}">
+    {{end }}
+  {{end }}
+  <meta property="og:type" content="article" />
+  <meta property="article:publisher" content="{{ .Params.author }}" /> 
+  <meta property="og:article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} /> 
+  <meta property="article:published_time" content={{ .Date.Format "2006-01-02T15:04:05Z0700" | safeHTML }} />
+  {{ with .Params.author }} 
+    <meta property="og:article:author" content="{{humanize . }}" />
+    <meta property="article:author" content="{{humanize . }}" /> 
+    <meta name="author" content="{{humanize . }}" /> 
+  {{ end }}
+  {{ with.Params.category }} 
+    <meta name="news_keywords" content="{{ index . 0 }}" />
+    <meta property="article:section" content="{{ index . 0 }}" /> 
+  {{ end }}
+  <script defer type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": {{ .Title }},
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Params.author }}"
+      },
+      "datePublished": "{{ .Date.Format "2006-01-02" }}",
+      "description": {{ .Description }},
+      "wordCount": {{ .WordCount }},
+      "mainEntityOfPage": "True",
+      "dateModified": "{{ .Lastmod.Format "2006-01-02" }}",
+      "image": {
+        "@type": "imageObject",
+        "url": "{{ with .Params.image }}{{ .Permalink }}{{ end }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        "logo": {
+          "@type": "imageObject",
+          "url": "{{ .Site.Params.favicon | absURL }}"
+        }
+      }
+    }
+  </script>
+{{ end }}
+<meta property="og:type" content="website" /> 
+<meta name="author" content="{{ .Site.Params.author }}" />

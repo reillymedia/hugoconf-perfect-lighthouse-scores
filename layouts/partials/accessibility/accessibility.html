@@ -1,0 +1,97 @@
+<!--Perfecting Lighthouse's Accessibility Audit-->
+
+<section class="areas-of-study">
+    <h1>Perfecting an Accessibilty Audit</h1>
+        <div class= "study-container">
+            <div class="container" id="keyboard-test">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/keyboard-test.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Keyboard Accessibility Test">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Keyboard Accessibility Testing" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Keyboard Test</h2>
+                <span class="course">This tests what it's like for someone to use your website using only their keyboard.</span>
+                <span class="classes">Keyboard only users are more common than you think.</span>
+                </div>
+            </a></div>
+            <div class="container" id="screen-reader-test">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/screen-reader-test.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Screen Reader Test">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Screen Reader Testing" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Screen Reader Test</h2>
+                <span class="course">This step tests how your website performs when a visitor is using a screen reader.</span>
+                <span class="classes">It renders text and image content as speech or braille out.</span>
+                </div>
+            </a></div>
+            <div class="container" id="color-blindness">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/color-blindness.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Colour Blindness & Vision Impairment Test">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Colour Blindness & Vision Impairment Testing" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Colour Blindness & Vision Impairment Test</h2>
+                <span class="course">Website performance for people with colour blindness or vision impairment.</span>
+                <span class="classes">Build your site so everyone can see it.</span>
+                </div>
+            </a> </div>
+            <div class="container" id="zoom-test">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/zoom-test.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Zoom Test">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Zoom Testing" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Zoom Test</h2>
+                <span class="course">Does the Website Work for People with Visual Imparements</span>
+                <span class="classes">Is the Website Truly Responsive?</span>
+                </div>
+            </a></div>
+            <div class="container" id="text-spacing-test">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/text-spacing-test.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Visual Impairment Optimization">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Does the Website Work for People with Visual Imparements" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Text Spacing Test</h2>
+                <span class="course">Font spacing can make your content easier to read.</span>
+                <span class="classes">People that experience dyslexia often have this issue.</span>
+                </div>
+            </a></div>
+            <div class="container" id="contrast-test">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/background-and-foreground-contrast-test.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Make adjustable fonts sizes">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Font spacing can make your content easier to read." src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Background & Foreground Contrast</h2>
+                <span class="course">There must be sufficient contrast between your background and content in the foreground.</span>
+                <span class="classes">Make your site easy to read.</span>
+                </div>
+            </a></div>
+        </div>
+</section>

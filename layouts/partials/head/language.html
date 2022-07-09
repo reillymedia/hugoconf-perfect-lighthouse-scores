@@ -1,0 +1,8 @@
+{{ "<!-- multilingual SEO optimizations -->" | safeHTML }}
+    {{ if .IsTranslated }}
+    {{ range .Page.AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{/*  Language  */}}
+    <meta property="og:locale" content="{{ .Site.Params.languageCode }}">
+    <meta name="language" content="{{ .Site.Params.languageName }}">
+    {{ end }}{{ end }}

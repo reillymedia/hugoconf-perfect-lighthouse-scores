@@ -1,0 +1,83 @@
+<!--Second Banner-->
+
+<section class="second-banner">
+    <div id="left-container">
+        <div id="pic-container">
+            {{ $asset := resources.Get "images/information-main.jpg" }}
+            {{ $img := $asset.Fit "880x483 webp" }}
+            <figure>
+            <img loading="lazy" width="100%" height="100%" class="desktop" alt="Man Reading a Book" src="{{ $img.RelPermalink }}" />
+            </figure>
+        </div>
+        <div id="description">
+        <h2>Perfect Practice Makes Perfect</h2>
+        <p>"Winners never quit, and quitters never win."
+            <br>
+            <br>
+            <br>
+            ― Vince Lombardi
+        </p>
+        </div>
+    </div>
+    <div id="right-container">
+        <div id="Orientation" class="container"> 
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-orientation.jpg" }}
+                {{ $img := $asset.Fill "195x195 center webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="What is Google Lighthouse?" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-orientation.jpg" }}
+                {{ $img := $asset.Fit "328x155 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="mobile" alt="What is Google Lighthouse?" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+            <div class="description">
+                <a href="https://perfectlighthousescores.com/">
+                <h2>What is Google Lighthouse?</h2>
+                <p>Why does it matter?</p>
+                </a>
+            </div>
+        </div>  
+        <div id="Campus" class="container">
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-campus.jpg" }}
+                {{ $img := $asset.Fill "195x195 center webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="Campus interior" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-campus.jpg" }}
+                {{ $img := $asset.Fit "328x155 webp" }}
+                <figure>
+                <img loading="lazy" width="100%"  height="100%" class="mobile" alt="What is Hugo?" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+            <div class="description">
+                <a href="https://perfectlighthousescores.com/">
+                <h2>What is Hugo?</h2>
+                <p>How can Hugo help achieve better Lighthouse scores?</p>
+                </a>
+            </div>
+        </div>
+        <div id="special-guest" class="container">
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-guest-lecture.jpg" }}
+                {{ $img := $asset.Fill "195x195 center webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="Old Man" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-guest-lecture.jpg" }}
+                {{ $img := $asset.Fit "328x155 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="mobile" alt="Campus interior" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+                <div class="description">
+                    <a href="https://perfectlighthousescores.com/">
+                    <h2>Why Does Page Speed Matter?</h2>
+                    <p>Does a faster website produce more conversion?</p>
+                </div></a>
+        </div>
+    </div>
+</section>

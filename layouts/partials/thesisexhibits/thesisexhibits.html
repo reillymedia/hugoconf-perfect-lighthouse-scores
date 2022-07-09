@@ -1,0 +1,83 @@
+<!--Second Banner-->
+
+<section class="second-banner">
+    <div id="left-container">
+        <div id="pic-container">
+            {{ $asset := resources.Get "images/information-main.jpg" }}
+            {{ $img := $asset.Fit "880x483 webp" }}
+            <figure>
+            <img loading="lazy" class="desktop" alt="Man Reading a Book" src="{{ $img.RelPermalink }}" />
+            </figure>
+        </div>
+        <div id="description">
+        <h2>It doesn't hurt to keep practicing</h2>
+        <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accmsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
+            <br>
+            <br>
+            <br>
+            - Emanuel, Sr. Strategist at Hiring.com
+        </p>
+        </div>
+    </div>
+    <div id="right-container">
+        <div id="Orientation" class="container"> 
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-orientation.jpg" }}
+                {{ $img := $asset.Fit "195x195 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="People Walking" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-orientation-mobile.jpg" }}
+                {{ $img := $asset.Fit "656x310 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="mobile" alt="People Walking" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+            <div class="description">
+                <a href="https://perfectlighthousescores.com/">
+                <h2>Orientation Date</h2>
+                <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
+                </a>
+            </div>
+        </div>  
+        <div id="Campus" class="container">
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-campus.jpg" }}
+                {{ $img := $asset.Fit "195x195 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="Campus interior" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-campus-mobile.jpg" }}
+                {{ $img := $asset.Fit "656x310 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="mobile" alt="Campus interior" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+            <div class="description">
+                <a href="https://perfectlighthousescores.com/">
+                <h2>Our Campus</h2>
+                <p>Find which campus is close by you</p>
+                </a>
+            </div>
+        </div>
+        <div id="special-guest" class="container">
+            <div class="thumbnail">
+                {{ $asset := resources.Get "images/information-guest-lecture.jpg" }}
+                {{ $img := $asset.Fit "195x195 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%" class="desktop" alt="Old Man" src="{{ $img.RelPermalink }}" />
+                </figure>
+                {{ $asset := resources.Get "images/information-guest-lecture-mobile.jpg" }}
+                {{ $img := $asset.Fit "656x310 webp" }}
+                <figure>
+                <img loading="lazy" height="100%" width="100%"  class="mobile" alt="Campus interior" src="{{ $img.RelPermalink }}" />
+                </figure>
+            </div>
+                <div class="description">
+                    <a href="https://perfectlighthousescores.com/">
+                    <h2>Special guest lecture</h2>
+                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
+                </div></a>
+        </div>
+    </div>
+</section>

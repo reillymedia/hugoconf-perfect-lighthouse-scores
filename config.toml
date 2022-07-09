@@ -1,0 +1,7 @@
+baseURL = 'https://perfectlighthousescores.com'
+languageCode = 'en-us'
+title = 'Perfect LightHouse Scores'
+theme = 'perfecttheme'
+description = 'How to achieve perfect lighthouse scores even when you suck at coding'
+enableRobotsTXT = true
+author = 'Scott Reilly'

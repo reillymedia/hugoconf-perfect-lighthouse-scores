@@ -1,0 +1,51 @@
+<!--Perfecting Lighthouse's Best Practices Audit-->
+
+<section class="areas-of-study">
+    <h1>Perfecting a Best Practices Audit</h1>
+        <div class= "study-container">
+            <div class="container" id="security-policy">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/content-security-policy.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Content Security Policy">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Content Security Policy Help" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Content Security Policy</h2>
+                <span class="course">A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks.</span>
+                </div>
+            </a></div>
+            <div class="container" id="avoid-javascript">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/avoid-javascript-when-possible.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Avoid Javascript When Possible">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Avoid Javascript When Possible" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Avoid Javascript When Possible</h2>
+                <span class="course">Javascript eats through page speed technical debt.</span>
+                <span class="classes">When in doubt, leave it out</span>
+                </div>
+            </a></div>
+            <div class="container" id="properly-sized-images">
+                <div class="study-pic">
+                    {{ $asset := resources.Get "images/properly-sized-images.jpg" }}
+                    {{ $img := $asset.Fit "391x200 webp" }}
+                    <a href="https://perfectlighthousescores.com" title="Properly Size Images">
+                    <figure>
+                    <img loading="lazy" height="200px" width="391px" alt="Properly Size Images" src="{{ $img.RelPermalink }}" />
+                    </figure>
+                </div>
+                <div class="description">
+                <h2>Properly Size Images</h2>
+                <span class="course">One of the best ways to improve your lighthouse score.</span>
+                <span class="classes">Having the right size in the right format is key.</span>
+                </div>
+            </a> </div>
+        </div>
+</section>

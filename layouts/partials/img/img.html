@@ -1,0 +1,43 @@
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
+{{ $src := resources.Get "images/banner.webp" }}
+
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
+
+{{ $tinyw := default "500x webp" }}
+{{ $smallw := default "883x webp" }}
+{{ $mediumw := default "1200x webp" }}
+{{ $largew := default "1500x webp" }}
+
+{{/* resize the src image to the given sizes */}}
+
+{{ .Scratch.Set "tiny" ($src.Resize $tinyw) }}
+{{ .Scratch.Set "small" ($src.Resize $smallw) }}
+{{ .Scratch.Set "medium" ($src.Resize $mediumw) }}
+{{ .Scratch.Set "large" ($src.Resize $largew) }}
+
+{{/* add the processed images to the scratch */}}
+
+{{ $tiny := .Scratch.Get "tiny" }}
+{{ $small := .Scratch.Get "small" }}
+{{ $medium := .Scratch.Get "medium" }}
+{{ $large := .Scratch.Get "large" }}
+
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
+<img 
+sizes="(min-width: 35em) 883px, 100vw"
+  srcset='
+  {{ if ge $src.Width "500" }}
+    {{ with $tiny.RelPermalink }}{{.}} 500w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "845" }}
+    {{ with $small.RelPermalink }}, {{.}} 883w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1200" }}
+    {{ with $medium.RelPermalink }}, {{.}} 1200w{{ end }}
+  {{ end }}
+  {{ if ge $src.Width "1500" }}
+    {{ with $large.RelPermalink }}, {{.}} 1500w {{ end }}
+  {{ end }}'
+    src="{{ $src.RelPermalink }}"  alt="Test" fetchpriority="high" loading="eager" width="883px" height="653px">
