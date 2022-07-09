@@ -2,6 +2,6 @@ baseURL = 'https://perfectlighthousescores.com'
 languageCode = 'en-us'
 title = 'Perfect LightHouse Scores'
 theme = 'perfecttheme'
-description = 'How to achieve perfect lighthouse scores even when you suck at coding'
+description = 'How to achieve perfect lighthouse scores.'
 enableRobotsTXT = true
 author = 'Scott Reilly'
