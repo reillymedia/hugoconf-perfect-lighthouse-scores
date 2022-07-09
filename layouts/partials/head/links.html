@@ -1,2 +1,0 @@
-  {{ $styles := resources.Get "scss/_main.scss" | toCSS | minify | fingerprint }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
