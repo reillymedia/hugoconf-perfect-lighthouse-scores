@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = 'Perfect LightHouse Scores'
 theme = 'perfecttheme'
 enableRobotsTXT = true
-author = 'Scott Reilly'
 [Params]
     favicon = '/assets/images/favicon.svg'
     author = 'Scott Reilly'
