@@ -1,4 +1,4 @@
-baseURL = 'https://perfectlighthousescores.com'
+baseURL = 'https://perfectlighthousescores.com/'
 languageCode = 'en-us'
 title = 'Perfect LightHouse Scores'
 theme = 'perfecttheme'
