@@ -2,6 +2,9 @@
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
+{{ $origHeight := $src.Height }}
+{{ $origWidth := $src.Width }}
+
 {{ $tinyw := default "500x webp" }}
 {{ $smallw := default "883x webp" }}
 {{ $mediumw := default "1200x webp" }}
@@ -25,13 +28,13 @@
 {{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden */}}
 
 <img 
-sizes="(min-width: 35em) 883px, 100vw"
+sizes="(min-width: 35em) 845px, 100vw"
   srcset='
   {{ if ge $src.Width "500" }}
     {{ with $tiny }}{{.}} 500w{{ end }}
   {{ end }}
   {{ if ge $src.Width "845" }}
-    {{ with $small }}, {{.}} 883w{{ end }}
+    {{ with $small }}, {{.}} 845w{{ end }}
   {{ end }}
   {{ if ge $src.Width "1200" }}
     {{ with $medium }}, {{.}} 1200w{{ end }}
@@ -39,4 +42,4 @@ sizes="(min-width: 35em) 883px, 100vw"
   {{ if ge $src.Width "1500" }}
     {{ with $large }}, {{.}} 1500w {{ end }}
   {{ end }}'
-    src="{{ $src.RelPermalink }}"  alt="{{ .alt }}" loading="{{.loading}}" width="{{ .width }}" height="{{ .height }}">
+    src="{{ $src.RelPermalink }}"  alt="{{ .alt }}" loading="{{.loading}}" width="{{ $origWidth }}" height="{{ $origHeight }}" >
