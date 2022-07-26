@@ -5,7 +5,6 @@
 
 - img processing inspiration from Laura Kalbag and help from Daniel F. Dickinson on getting the partial to implement correctly in a layout file. 
 
-
 - Menu help from Agata Reilly
 
 - View the live Site https://perfectlighthousescores.com
