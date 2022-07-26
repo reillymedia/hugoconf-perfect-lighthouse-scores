@@ -1,5 +1,6 @@
 {{/* get file that matches the filename as specified as src="" in shortcode */}}
-{{ $src := resources.Get "images/banner.webp" }}
+
+{{ $src := resources.Get .url  }}
 
 {{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
