@@ -1,0 +1,66 @@
+{{ if .Params.featuredImage }}
+
+{{ $ftimgsrc := resources.Get .Params.featuredImage }}
+
+<div class="featured-media">
+  <picture>
+
+    {{ $isJPG := eq (path.Ext .Params.featuredImage) ".jpg" }}
+    {{ $isJPEG := eq (path.Ext .Params.featuredImage) ".jpeg" }}
+    {{ $isPNG := eq (path.Ext .Params.featuredImage) ".png" }}
+
+    {{ if or ($isJPG) ($isJPEG) ($isPNG) }}
+
+        {{ $tinyw := "428x webp" }}
+        {{ $smallw := "856x webp" }}
+        {{ $mediumw := "1440x webp" }}
+        {{ $largew := "2048x webp" }}
+        {{ $originw := (printf "%dx webp" $ftimgsrc.Width) }}
+    
+        {{ $data := newScratch }}
+        {{ if ge $ftimgsrc.Width 428 }}
+            {{ $data.Set "tiny" ($ftimgsrc.Resize $tinyw) }}
+        {{ else }}
+            {{ $data.Set "tiny" ($ftimgsrc.Resize $originw) }}
+        {{ end }}
+        {{ if ge $ftimgsrc.Width 856 }}
+            {{ $data.Set "small" ($ftimgsrc.Resize $smallw) }}
+        {{ else }}
+            {{ $data.Set "small" ($ftimgsrc.Resize $originw) }}
+        {{ end }}
+        {{ if ge $ftimgsrc.Width 1440 }}
+            {{ $data.Set "medium" ($ftimgsrc.Resize $mediumw) }}
+        {{ else }}
+            {{ $data.Set "medium" ($ftimgsrc.Resize $originw) }}
+        {{ end }}
+        {{ if ge $ftimgsrc.Width 2048 }}
+            {{ $data.Set "large" ($ftimgsrc.Resize $largew) }}
+        {{ else }}
+            {{ $data.Set "large" ($ftimgsrc.Resize $originw) }}
+        {{ end }}
+    
+        {{ $tiny := $data.Get "tiny" }}
+        {{ $small := $data.Get "small" }}
+        {{ $medium := $data.Get "medium" }}
+        {{ $large := $data.Get "large" }}
+
+    <source media="(max-width: 834px)" 
+            srcset="{{with $small.RelPermalink }}{{.}}{{ end }} 2x,
+                    {{with $tiny.RelPermalink }}{{.}}{{ end }}"
+                    type="image/webp">
+    <source media="(min-width: 835px)" 
+            srcset="{{with $small.RelPermalink }}{{.}}{{ end }} 2x,
+                    {{with $tiny.RelPermalink }}{{.}}{{ end }}"
+                    type="image/webp">
+    {{ end }}
+                    
+   <img
+    src="{{ $ftimgsrc.Permalink | safeURL }}"
+    alt="{{ .Title }}" title="{{ .Title }}"
+    decoding="async"
+    {{ if or ($isJPG) ($isJPEG) ($isPNG) }}width="{{ $ftimgsrc.Width }}"
+    height="{{ $ftimgsrc.Height }}"{{ end }}>
+
+  </picture>
+</div>
+{{ end }}

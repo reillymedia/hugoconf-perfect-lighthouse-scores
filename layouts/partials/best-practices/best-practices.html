@@ -1,10 +1,10 @@
 <!--Perfecting Lighthouse's Best Practices Audit-->
 
-<section class="areas-of-study">
+<section class="performance">
     <h1>Perfecting a Best Practices Audit</h1>
-        <div class= "study-container">
+        <div class= "card">
             <div class="container" id="security-policy">
-                <div class="study-pic">
+                <div class="card-img">
                     {{ $asset := resources.Get "images/content-security-policy.jpg" }}
                     {{ $img := $asset.Fit "391x200 webp" }}
                     <a href="https://perfectlighthousescores.com" title="Content Security Policy">
@@ -18,7 +18,7 @@
                 </div>
             </a></div>
             <div class="container" id="avoid-javascript">
-                <div class="study-pic">
+                <div class="card-img">
                     {{ $asset := resources.Get "images/avoid-javascript-when-possible.jpg" }}
                     {{ $img := $asset.Fit "391x200 webp" }}
                     <a href="https://perfectlighthousescores.com" title="Avoid Javascript When Possible">
@@ -33,7 +33,7 @@
                 </div>
             </a></div>
             <div class="container" id="properly-sized-images">
-                <div class="study-pic">
+                <div class="card-img">
                     {{ $asset := resources.Get "images/properly-sized-images.jpg" }}
                     {{ $img := $asset.Fit "391x200 webp" }}
                     <a href="https://perfectlighthousescores.com" title="Properly Size Images">

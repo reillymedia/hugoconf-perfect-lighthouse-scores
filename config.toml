@@ -3,7 +3,9 @@ languageCode = 'en-us'
 title = 'Perfect LightHouse Scores'
 theme = 'perfecttheme'
 enableRobotsTXT = true
+markup.highlight.noClasses = false
 [Params]
     favicon = '/assets/images/favicon.svg'
     author = 'Scott Reilly'
     description = 'How to achieve perfect lighthouse scores.'
+

@@ -1,0 +1,22 @@
+<!--Perfecting Lighthouse's Performance Audit-->
+
+<section class="performance">
+    <h2>Perfecting Lighthouse Accessbility</h2>
+    <div class= "card">
+            {{ range where .Site.Pages "Params.categories" "accessibility" }}
+            <div class="container" id="{{ .Title }}">
+                <div class="card-img">
+                    <a href="{{ .Permalink }}" title="How to {{ .Title  }}" >
+                    <figure>
+                       {{ partial "img/img2.html" . }}
+                    </figure>
+                </div>
+                <div class="description">
+                <h3>{{ .Title }}</h3>
+                <span class="course">{{ .Description }}</span>
+                </div></a>
+                </div>
+            {{end}}
+            </div>
+    </div>
+</section>

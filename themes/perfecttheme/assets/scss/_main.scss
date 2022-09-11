@@ -164,6 +164,10 @@ header {
     }
     
     h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
         font-size: 1.3rem;
         font-weight: 600;
         letter-spacing: .5px;
@@ -263,11 +267,17 @@ header {
         
     }
   
+
     .right_description h1 {
         padding-bottom: 2rem;
     }
   
     .right_description h2 {
+        padding-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    .right_description h3 {
         padding-bottom: 2rem;
     }
   
@@ -373,20 +383,20 @@ header {
   
   /* Areas of Study */ 
   
-    .areas-of-study {
+    .performance {
       background-image: linear-gradient(120deg, #fff 0%, #ebedee 100%);
         padding: 2rem 4.5rem;
         display: block;
     }
   
-    .areas-of-study h1 {
+    .performance h2 {
         text-align: center;
         padding: 2rem 0rem;
     }
     
     
   
-    .study-container {
+    .card {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -394,7 +404,7 @@ header {
         justify-content: center;
     }
   
-    .areas-of-study .container {
+    .performance .container {
         width: 28%;
         margin: 1.2rem;
         background-color: white;
@@ -405,12 +415,12 @@ header {
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
   
-    .areas-of-study .container:hover {
+    .performance .container:hover {
         transform: scale(1.1);
         box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     }
   
-    .areas-of-study .container img {
+    .performance .container img {
         max-width: 100%;
         height: auto;
         display: block;
@@ -418,19 +428,19 @@ header {
         border-top-right-radius: 30px;
     }
   
-   .study-container .description {
+   .card .description {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 1.5rem 1rem;
    }
   
-   .study-container .course {
+   .card .course {
        padding: 1rem 0px;
        font-weight: 100;
    }
     
-   .study-container .classes {
+   .card .classes {
        font-weight: 100;
    }
   
@@ -612,6 +622,10 @@ header {
     }
     
     h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
         font-size: 1.3rem;
         font-weight: 600;
         letter-spacing: .5px;
@@ -664,6 +678,10 @@ header {
    h1.banner {
        padding-top: 2rem;
    }
+
+   h2.banner {
+    padding-top: 2rem;
+}
    
     button {
         width: 100%;
@@ -732,7 +750,7 @@ header {
   
   /* Courses */ 
   
-  .study-pic {
+  .card-img {
       display: none;
     }
     div.study.pic a {
@@ -740,11 +758,11 @@ header {
         color: black;
     }
     
-  .areas-of-study .description span {
+  .performance .description span {
       display: none;
   }
   
-  .areas-of-study {
+  .performance {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -754,13 +772,19 @@ header {
   
   
   
-  .areas-of-study h1 {
+  .performance h1 {
       text-align: center;
       padding-bottom: 1rem;
       padding-top: 2rem;
   }
+
+  .performance h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
   
-  .areas-of-study .container {
+  .performance .container {
       background-color: #fff;
       display: flex;
       margin-bottom: .5rem; 
@@ -768,7 +792,7 @@ header {
       box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   }
   
-  .areas-of-study .container:hover{
+  .performance .container:hover{
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
   }
   

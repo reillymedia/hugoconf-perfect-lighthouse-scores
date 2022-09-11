@@ -1,0 +1,54 @@
+{{ if .Params.featuredImage }}
+
+{{ $ftimgsrc := resources.Get .Params.featuredImage }}
+
+<div class="desktop">
+  <picture>
+
+    {{ $isJPG := eq (path.Ext .Params.featuredImage) ".jpg" }}
+    {{ $isJPEG := eq (path.Ext .Params.featuredImage) ".jpeg" }}
+    {{ $isPNG := eq (path.Ext .Params.featuredImage) ".png" }}
+
+    {{ if or ($isJPG) ($isJPEG) ($isPNG) }}
+
+        {{ $tinyw := "155x webp" }}
+        {{ $smallw := "328x webp" }}
+        {{ $originw := (printf "%dx webp" $ftimgsrc.Width) }}
+    
+        {{ $data := newScratch }}
+        {{ if ge $ftimgsrc.Width 155}}
+            {{ $data.Set "tiny" ($ftimgsrc.Resize $tinyw) }}
+        {{ else }}
+            {{ $data.Set "tiny" ($ftimgsrc.Resize $originw) }}
+        {{ end }}
+        {{ if ge $ftimgsrc.Width 328 }}
+            {{ $data.Set "small" ($ftimgsrc.Resize $smallw) }}
+        {{ else }}
+            {{ $data.Set "tiny" ($ftimgsrc.Resize $originw) }}
+       {{ end }}
+
+        {{ $tiny := $data.Get "tiny" }}
+        {{ $small := $data.Get "small" }}
+        {{ $medium := $data.Get "medium" }}
+        {{ $large := $data.Get "large" }}
+
+    <source media="(max-width: 328px)" 
+            srcset="{{with $small.RelPermalink }}{{.}}{{ end }} 2x,
+                    {{with $tiny.RelPermalink }}{{.}}{{ end }}"
+                    type="image/webp">
+    <source media="(min-width: 155px)" 
+            srcset="{{with $small.RelPermalink }}{{.}}{{ end }} 2x,
+                    {{with $tiny.RelPermalink }}{{.}}{{ end }}"
+                    type="image/webp">
+    {{ end }}
+                    
+   <img
+    src="{{ $ftimgsrc.Permalink | safeURL }}"
+    alt="{{ .Title }}" title="{{ .Title }}"
+    decoding="async"
+    {{ if or ($isJPG) ($isJPEG) ($isPNG) }}width="{{ $ftimgsrc.Width }}"
+    height="{{ $ftimgsrc.Height }}"{{ end }}>
+
+  </picture>
+</div>
+{{ end }}

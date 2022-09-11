@@ -1,0 +1,38 @@
+<!--Second Banner-->
+
+<section class="second-banner">
+    <div id="left-container">
+        <div id="pic-container">
+            {{ $asset := resources.Get "images/information-main.jpg" }}
+            {{ $img := $asset.Fit "880x483 webp" }}
+            <figure>
+            <img loading="lazy" width="100%" height="100%" class="desktop" alt="Achieve perfect lighthouse scores using Hugo" src="{{ $img.RelPermalink }}" />
+            </figure>
+        </div>
+        <div id="description">
+        <h2>Perfect Practice Makes Perfect</h2>
+        <p>"Winners never quit, and quitters never win."
+            <br>
+            <br>
+            <br>
+            ― Vince Lombardi
+        </p>
+        </div>
+    </div>
+    <div id="right-container">
+        {{ range where .Site.Pages "Params.categories" "faqs" }}
+        <div id="Orientation" class="container"> 
+            <div class="thumbnail">
+                <figure>
+                {{ partial "img/img-thumbs.html" . }}
+                </figure>
+                <div class="description">
+                <a href="{{ .RelPermalink }}">
+                <h3>{{ .Title }}</h3>
+                <p>{{ .Description }}</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+            {{end}}
+</section>
