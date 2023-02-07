@@ -642,15 +642,15 @@ header {
     }
   
     h1 {
-        font-size: 2.5rem;
+        font-size: clamp(2.5rem, 2.7vw, 2.7rem);
     }
     
     h2 {
-        font-size: 2.5rem;
+        font-size: clamp(1.6rem, 1.81vw, 1.81rem);
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: clamp(1.4rem, 1.618vw, 1.618rem);
         font-weight: 600;
         letter-spacing: .5px;
     }
@@ -851,6 +851,7 @@ header {
   
     #copyright {
         align-items: center;
+        padding: 2rem;
     }
   
     footer ul {
