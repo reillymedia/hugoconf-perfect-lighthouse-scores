@@ -10,25 +10,21 @@
             </label>
             <div id="menu">
                 <ul class="menu-list">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/blog/">Blog</a></li>         
-                    <li><a href="/guides/">Guides</a></li>
-                    <li><a href="/consulting/">Consulting</a></li>
+                    <li><a href="{{.Site.BaseURL}}">Guides</a></li>
                     <li><a href="/about/">About</a></li>
+                    <li><a href="/blog/">Blog</a></li>         
                 </ul>
             </div>
         </div>
         <div id="flex-menu">
             <ul class="menu-list-desktop">
-                <li><a href="/">Home</a></li>
-                    <li><a href="/blog/">Blog</a></li>         
-                    <li><a href="/guides/">Guides</a></li>
-                    <li><a href="/consulting/">Consulting</a></li>
-                    <li><a href="/about/">About</a></li>
+                <li><a href="{{.Site.BaseURL}}">Guides</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/blog/">Blog</a></li> 
             </ul>
         </div>  
     </nav>
     <div class='logo'>
-        <a href="https://perfectlighthousescores.com" class="lighthouse-header-logo">Perfect Lighthouse Scores</a>
+        <a href="{{.Site.BaseURL}}" class="lighthouse-header-logo">Perfect Lighthouse Scores</a>
     </div>
 </header>
