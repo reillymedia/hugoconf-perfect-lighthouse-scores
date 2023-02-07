@@ -173,7 +173,7 @@ header {
     }
     
     h1 {
-        font-size: clamp(2.5rem, 2.7vw, 2.7rem);
+        font-size: clamp(2rem, 2vw, 2rem);
         line-height: 1.2;
         margin: 3rem 0 1.38rem 0;
     }
@@ -850,8 +850,8 @@ header {
     }
   
     #copyright {
-        align-items: center;
-        padding: 2rem;
+        align-items: left;
+        padding-top: 2rem;
     }
   
     footer ul {
