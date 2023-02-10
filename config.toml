@@ -5,7 +5,7 @@ theme = 'perfecttheme'
 enableRobotsTXT = true
 markup.highlight.noClasses = false
 [Params]
-    favicon = '/assets/images/favicon.svg'
+    favicon = '/assets/icons/favicon.svg'
     author = 'Scott Reilly'
     description = 'How to achieve perfect lighthouse scores.'
 
