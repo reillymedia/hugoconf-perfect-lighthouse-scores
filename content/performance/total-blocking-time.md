@@ -1,7 +1,7 @@
 ---
 title: "Total Blocking Time (TBT)"
 description: "30% Weight on Overall Score. By improving TBT you usually also improve First Input Display."
-date: 2022-07-17T18:43:36-07:00
+date: 2023-02-06T18:43:36-07:00
 draft: false
 featuredImage: "/images/total-blocking-time.jpg"
 categories: performance

@@ -2,7 +2,7 @@
 title: "Keyboard Test"
 description: "This tests what it's like for someone to use your website using only their keyboard.
 Keyboard only users are more common than you think."
-date: 2022-07-17T18:43:36-07:00
+date: 2023-02-06T18:43:36-07:00
 draft: false
 featuredImage: "/images/keyboard-test.jpg"
 categories: accessibility
