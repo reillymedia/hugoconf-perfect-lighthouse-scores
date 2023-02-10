@@ -3,7 +3,6 @@ name = "perfecttheme"
 description = "How to achieve Perfect Lighthouse Scores using Hugo"
 homepage = "https://perfectlighthousescores.com"
 
-disableKinds = ["taxonomy", "taxonomyTerm"]
 
 [author]
   name = "Scott Reilly"
