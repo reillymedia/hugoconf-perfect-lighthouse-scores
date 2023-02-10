@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="robots" content="index,all,follow">
-
+<link rel="canonical" href="{{ .Permalink }}"  /> 
 {{ $styles := resources.Get "scss/style.scss" | toCSS | minify | fingerprint }}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 <meta name="googlebot" content="index,follow,snippet,archive">{{ if .IsHome}}
