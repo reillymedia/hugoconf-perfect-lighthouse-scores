@@ -776,6 +776,13 @@ header {
   
   .card-img {
       display: none;
+     img { display: none; }
+
+      @media (min-width: 600px) {
+        img {
+          display: block;
+        }
+      }
     }
     div.study.pic a {
         text-decoration: none;
