@@ -9,4 +9,5 @@ markup.highlight.noClasses = false
     author = 'Scott Reilly'
     description = 'How to achieve perfect lighthouse scores.'
 
+disableKinds = ["taxonomy", "taxonomyTerm"]
 
