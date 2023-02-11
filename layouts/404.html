@@ -1,14 +1,15 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div>
-        <h1>404 Page Not Found :( </h1>
-        <a href="{{site.BaseURL}}" class="btn btn-main">Back To Home</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+  <article>
+    <h1>Sorry But the Page You Are Looking Doesn't Exist</h1>
+    <ul>
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+        <li>
+            <a href="{{.Permalink}}">{{.Title}}</a>
+        </li>
+    {{ end }}
+    </ul>
+    </article>
+  </main>
 {{ end }}
