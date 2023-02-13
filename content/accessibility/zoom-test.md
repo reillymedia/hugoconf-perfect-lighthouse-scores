@@ -10,6 +10,8 @@ categories: accessibility
 
 Having a website that is accessible to all is a must for businesses. It is important to ensure that your website is accessible and compliant to the standards of the World Wide Web Consortium (W3C). This is where a Zoom Test comes in. In this blog, we will discuss what a Zoom Test is, its benefits, what to look for during a Zoom Test, the 8 steps of a Zoom Test, tips for conducting a successful Zoom Test, Zoom Test tools and resources, common website accessibility issues, how to fix common website accessibility issues, and best practices for website accessibility.
 
+{{< toc >}}
+
 ## What is a Zoom Test?
 A Zoom Test is a type of website accessibility assessment. It is a process of analyzing a website to ensure that it meets the standards of the World Wide Web Consortium (W3C). This process is based on the principles of web accessibility and involves a wide range of tests, from basic HTML and CSS validation to more advanced tests such as color contrast, keyboard navigation, and screen reader compatibility.
 

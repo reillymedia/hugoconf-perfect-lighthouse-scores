@@ -10,6 +10,8 @@ categories: performance
 
 Are you looking to improve your website performance? There are many factors that can affect the speed and performance of your website, and one of the most important ones is Largest Contentful Paint (LCP). LCP is a metric for measuring the time it takes for the largest content element on a page to load. In this blog article, we'll discuss what LCP is, how to improve LCP, and best practices for optimizing LCP.
 
+{{< toc >}}
+
 ## Largest Contentful Paint (LCP)
 Largest Contentful Paint (LCP) is an important performance metric for measuring the time it takes for the largest content element on a page to load. It's a part of Google's Core Web Vitals, which are a set of metrics that measure the performance of a website from the user's perspective. LCP is a key metric because it gives us an indication of how quickly users can get the content they are looking for.
 

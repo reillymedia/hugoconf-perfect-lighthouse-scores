@@ -9,6 +9,8 @@ categories: seo
 
 HTML elements are the building blocks of all the webpages we see today. They are the foundation of our digital lives. But what exactly are HTML elements, and why are they important? In this blog post, we will explore the power of HTML elements, learn about different types of HTML elements, and understand how to use them to make your website reach the next level.
 
+{{< toc >}}
+
 ## What are HTML Elements?
 HTML elements are the components of a web page that are created using HTML (HyperText Markup Language). HTML elements are the basic building blocks of a website, and they can be used to create the structure of a website, as well as to add content, images, and other multimedia.
 

@@ -10,6 +10,8 @@ categories: best practices
 
 If you are a web developer or designer, you know how important it is to use the right tools to create a website that looks professional and is user-friendly. It’s easy to get caught up in the new tools and techniques that are constantly emerging in the web design world, but some of the basics are still the most important. That includes HTML and CSS.
 
+{{< toc >}}
+
 HTML and CSS can be used together to create stunning visuals and powerful functionality. In this blog post, we’ll look at the benefits of using HTML and CSS over Javascript, how to use HTML and CSS to achieve stylish results, common mistakes to avoid when using HTML and CSS, tips for improving HTML and CSS performance, best practices for using HTML and CSS, examples of how CSS and HTML can be used, and resources for learning HTML and CSS.
 
 ## Introduction to HTML and CSS

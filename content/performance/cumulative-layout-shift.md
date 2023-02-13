@@ -10,6 +10,7 @@ categories: performance
 
 Have you ever been frustrated when you clicked on a link or a button, but the page didn't move to the expected position? Or ever tried looking for a product on an eCommerce website, only to find it has moved to another location? That's Cumulative Layout Shift (CLS), and it's a real problem that affects user experience and website performance. But don't worry, because we have the solution - this guide will show you how to eliminate CLS once and for all!
 
+{{< toc >}}
 
 ## What is Cumulative Layout Shift (CLS)?
 Cumulative Layout Shift (CLS) is a metric used to measure the visual stability of a page. It is defined by the World Wide Web Consortium (W3C) as “the sum total of all individual layout shift scores for each unexpected layout shift that occurs during the entire lifespan of the page”. In other words, it's a measure of how often a page's layout shifts unexpectedly.

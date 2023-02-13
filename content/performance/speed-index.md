@@ -10,6 +10,8 @@ categories: performance
 
 A speed index is an important performance metric for websites. It measures the time a webpage needs to fully load and is closely related to the user experience. A website with a high speed index has a better chance of success than a website with a low speed index.
 
+{{< toc >}}
+
 In this blog post, we'll explain what a speed index is, why it's important, and how you can improve it. We'll also cover the tools you can use to measure page speed index, strategies for improving page speed index, and how to optimize your images, code, and caching techniques for faster page speed index. Finally, we'll provide some final tips for improving your website's speed index.
 
 ## What is a Speed Index?

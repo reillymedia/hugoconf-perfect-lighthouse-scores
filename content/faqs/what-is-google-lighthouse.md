@@ -10,6 +10,8 @@ categories: faqs
 
 Google Lighthouse is an open-source auditing tool developed by Google and is available as a Chrome Extension. It helps you to measure and improve the performance, accessibility, and best practices of your websites and web apps. It also helps you to identify and fix problems that may lead to a decrease in your website’s visibility in search engine results.
 
+{{< toc >}}
+
 The tool was designed to help web developers and designers create websites that are fast, secure, and accessible to all users. It provides developers with an easy-to-use tool for evaluating their website’s performance in a variety of areas, including accessibility, performance, best practices, and SEO.
 
 ## Benefits of using Google Lighthouse

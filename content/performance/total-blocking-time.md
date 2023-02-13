@@ -10,6 +10,8 @@ type: page
 
 If you are running a website, it is important to stay on top of your total blocking time (TBT). Your total blocking time is the amount of time it takes for a page to load from the time a user requests it. It is an important metric for website performance, and if your TBT is too high, it can lead to a poor user experience, higher bounce rates, and a loss of potential customers.
 
+{{< toc >}}
+
 Many webmasters and web developers overlook total blocking time when it comes to website performance. But if you want to optimize your website and keep users engaged, it is important to pay attention to your TBT. In this article, we explore what total blocking time is, what a good TBT score is, and how to reduce your total blocking time and get the best performance out of your website.
 
 ## What is considered a good TBT score?

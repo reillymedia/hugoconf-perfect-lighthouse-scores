@@ -12,6 +12,8 @@ Do you want to know how fast your website is? Do you want to make sure it’s ru
 
 Having a fast website is essential for success in the digital world and running a speed test is the best way to ensure your website is performing at its peak. In this blog post, we’ll cover everything you need to know about using Google’s speed test to ensure your website is running smoothly. Let’s get started!
 
+{{< toc >}}
+
 ## Introduction to Website Speed
 Website speed is an important factor in determining how successful your website is. It’s not just about how quickly your pages load, but also how quickly your users can interact with your site. A slow website can lead to a poor user experience and fewer conversions.
 

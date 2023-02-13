@@ -10,6 +10,8 @@ categories: best practices
 
 I often face the challenge of having to resize images quickly and effectively. This can be a tedious and time-consuming task if done manually, but thankfully there are tools like Hugo that can help you do it faster and with better results. In this blog post, I'll be discussing all the ins and outs of processing pictures like a pro using Hugo, from understanding what it is to setting proper height and width for images, to troubleshooting image processing issues. So, let's get started!
 
+{{< toc >}}
+
 ## What is Hugo?
 Hugo is a powerful open-source static site generator that is designed to make it easy for you to quickly create and publish your website. It's a great tool for photographers and other professionals who want to showcase their work without having to spend too much time coding or designing. With Hugo, you can create a website in minutes, and it's easy to customize and add features.
 

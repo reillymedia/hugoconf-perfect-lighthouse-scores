@@ -10,6 +10,8 @@ categories: accessibility
 
 Text Spacing CSS stands for Cascading Style Sheets. It's a language that helps web developers create websites that are more accessible and easier to use. Text Spacing CSS helps to separate text into sections and makes it easier to read. It also helps to create a consistent look and feel across different devices.
 
+{{< toc >}}
+
 The most important part of Text Spacing CSS is the “spacing” part. This is where you can set the amount of space between lines of text. This is important for making sure that people with disabilities can read your website easily. It also helps to make your website look more organized and professional.
 
 ## Benefits of Text Spacing CSS

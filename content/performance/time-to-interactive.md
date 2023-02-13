@@ -10,6 +10,8 @@ categories: performance
 
 Websites have become an essential part of our lives. From online shopping to streaming services, websites are being used more and more each day. With all the traffic these websites receive, it’s important to ensure that they’re loading quickly and efficiently. Achieving lightning-fast time to interactive (TTI) is essential for delivering a great user experience. In this article, we’ll discuss what time to interactive is, why it’s important, how to measure it, and strategies for optimizing it. Let’s dive in!
 
+{{< toc >}}
+
 ## What is Time to Interactive?
 Time to interactive (TTI) is a measure of how long it takes for a website to become usable after being loaded. It takes into account several factors, such as page load time, JavaScript execution, and rendering. TTI is the time when the page becomes interactive and responsive to user input. It’s an important metric for measuring the performance of a website.
 

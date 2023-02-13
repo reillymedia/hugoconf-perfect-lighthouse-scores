@@ -10,6 +10,8 @@ categories: faqs
 
 It’s no secret that the world of web development is constantly evolving. As technologies and trends come and go, one thing remains constant: the need for a fast, reliable and easy-to-use static site generator. When it comes to generating static sites, there are a few contenders on the market, but none come close to the power and flexibility of Hugo. In this blog post, we’ll explore why Hugo is the best static site generator around.
 
+{{< toc >}}
+
 ## Introduction to Hugo
 Hugo is a static site generator written in Go and released in 2014 by Steve Francia. It’s a popular open source project with over 22,000 stars on GitHub, and it’s used by some of the biggest companies in the world, like Airbnb, Facebook, and Google. Hugo is incredibly fast, with performance reported to be up to 1000x faster than some of its competitors. It’s also incredibly flexible, able to generate sites with any type of content you can imagine, from blogs to e-commerce stores.
 

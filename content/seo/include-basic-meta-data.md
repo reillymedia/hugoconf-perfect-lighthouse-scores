@@ -9,6 +9,8 @@ categories: seo
 
 Meta data is the information that search engines and other websites use to understand and rank your content on the web. It's important to include basic meta data elements such as titles, descriptions, and descriptive links on your website in order to improve your search engine optimization (SEO). In this blog post, we will discuss what titles, descriptions, and descriptive links are, the benefits of using them, how to create them, and best practices for including them on your website.
 
+{{< toc >}}
+
 ## Introduction to Basic Meta Data
 Meta data is a key part of SEO, as it helps search engines and other websites understand what your content is about. It includes elements such as titles, descriptions, and descriptive links, which can all help your website rank higher in search engine results. Titles, descriptions, and descriptive links provide visitors with more information about the content on your website, making it easier for them to find what they're looking for. They also help search engines understand the context of your content, which can help your website rank higher in search results.
 

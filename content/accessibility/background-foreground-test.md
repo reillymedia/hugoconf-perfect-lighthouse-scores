@@ -11,6 +11,8 @@ categories: accessibility
 
 For those striving to create a website or application that is accessible to all users, one of the most important tools is the accessibility color checker. This tool helps to ensure that color contrast between background and foreground elements are high enough to be visible to color blind and low vision users. In this blog post, we will discuss what an accessibility color checker is, why contrast matters, how to choose contrasting background and foreground colors, how to use an accessibility checker to test your color contrast, tips for creating contrasting color schemes, and resources to help you out.
 
+{{< toc >}}
+
 ## What is an Accessibility Color Checker?
 An accessibility color checker is a tool used to measure the contrast between background and foreground elements on a website or application. This tool helps to ensure that the contrast between the two elements is high enough to be visible to color blind and low vision users. The accessibility color checker is an important tool to have in your arsenal when it comes to creating an accessible website or application.
 

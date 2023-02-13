@@ -9,6 +9,8 @@ categories: seo
 
 As more and more websites are powered by Hugo, the need for image optimization has become more important than ever. Thankfully, Hugo has a few tricks up its sleeves that can help you optimize and serve images in next gen formats. In this blog post, we’ll take a look at why serving images in next gen formats is important, and how you can use Hugo to do it. Let’s get started!
 
+{{< toc >}}
+
 ## Introduction to Hugo and Image Optimization
 If you’re a web developer, chances are you’ve heard of Hugo. Hugo is a static site generator that’s quickly becoming the go-to choice for developers looking to create fast, lightweight websites. Hugo’s secret sauce lies in its ability to serve images quickly and efficiently. This is achieved with a combination of image resizing and compression, which is essential for optimizing images for the web.
 

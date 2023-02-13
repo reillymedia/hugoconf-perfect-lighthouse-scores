@@ -12,6 +12,8 @@ Have you ever heard of a Content Security Policy (CSP)? It’s an essential secu
 
 In this article, we’ll give you an overview of what a CSP is, the benefits of implementing one, how to set up a CSP header and write your own policy, and the best practices for using a CSP. We’ll also cover some tips for monitoring and reporting CSP violations, as well as some courses and services that can help you understand and implement a CSP.
 
+{{< toc >}}
+
 ## Let’s get started!
 What is a Content Security Policy (CSP)?
 A Content Security Policy (CSP) is a set of security rules that websites can use to protect themselves from malicious attacks. It works by allowing webmasters to specify which websites, scripts, and other assets a web browser is allowed to load. The CSP is then sent as a header in the response to the browser and the browser will only allow resources to be loaded if they are in compliance with the CSP.

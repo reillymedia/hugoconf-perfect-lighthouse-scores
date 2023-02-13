@@ -11,6 +11,8 @@ categories: accessibility
 
 Do you have a website? Or a mobile app? If you do, you must ensure that your webpages are accessible to all users, including those who use a keyboard to navigate. Keyboard accessibility is an important aspect of web accessibility as it helps to provide an equal user experience for everyone, regardless of their ability.
 
+{{< toc >}}
+
 In this blog post, we will discuss what keyboard accessibility is, why it is important, how to test for it, and the tools you can use to make sure your website is keyboard-friendly. We will also look at some examples of keyboard accessibility, as well as tips and tricks to make the process easier. So, let’s get started!
 
 ## What is keyboard accessibility?

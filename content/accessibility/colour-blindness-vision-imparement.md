@@ -10,6 +10,8 @@ categories: accessibility
 
 As technology advances and our lives become more connected, we are becoming increasingly aware of how certain conditions can affect our lives. Colour blindness and vision impairment are two such conditions that can have a significant impact on how we interact with the world around us. In this blog, we'll explore what colour blindness and vision impairment are, how to take a colour blindness and vision impairment test, and how to make a difference with the results. We'll also discuss the various treatments available and how to support someone who is colour blind or has a vision impairment.
 
+{{< toc >}}
+
 ## Introduction to Colour Blindness and Vision Impairment
 Colour blindness and vision impairment affect people of all ages, from young children to adults. Colour blindness is when an individual is unable to distinguish between certain colours, while vision impairment is when an individual has difficulty seeing objects clearly. Both of these conditions can significantly reduce an individual’s ability to interact with the world around them in a meaningful way.
 

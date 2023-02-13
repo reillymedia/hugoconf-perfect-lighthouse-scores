@@ -10,6 +10,8 @@ categories: performance
 
 Every millisecond counts when it comes to website performance. It’s no longer enough to simply have a website that loads quickly. Instead, you need to focus on optimizing the user experience and making sure your site can handle large amounts of traffic without any performance issues. One of the most important aspects of web performance is the First Contentful Paint (FCP). This metric is used to measure how quickly content is displayed to the user after they have requested a page. In this blog, I’m going to discuss what FCP is, why it’s important, and how to improve it.
 
+{{< toc >}}
+
 ## What is First Contentful Paint?
 First Contentful Paint (FCP) is a metric used to measure the time it takes for the user to see the first bit of content on the page. It’s an important metric for web performance, as it tells us how quickly our content is displayed to the user. FCP is calculated from the time the user requests the page to the time the first meaningful content is displayed. This can be anything from text, images, videos, or other content.
 

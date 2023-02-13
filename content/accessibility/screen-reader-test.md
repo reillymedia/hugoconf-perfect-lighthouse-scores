@@ -11,6 +11,8 @@ categories: accessibility
 
 Screen reader accessibility is becoming increasingly important for web developers and designers. With so many people relying on assistive technologies to access the web, it’s critical to ensure that your website is optimized for screen readers. The best way to do this is to perform a screen reader test on your website. In this article, I’ll discuss the importance of screen reader testing and the different types of tests you can run. I’ll also provide tips on how to create an accessible website, fix any accessibility issues, and receive a free screen reader audit for your website today.
 
+{{< toc >}}
+
 ## What is screen reader accessibility?
 Screen reader accessibility is the process of making sure that websites and web applications are accessible to people with disabilities who rely on screen readers. Screen readers are tools that read web content aloud, allowing visually impaired people to access the web. By ensuring that your website is screen reader accessible, you can make sure that everyone has equal access to your content.
 

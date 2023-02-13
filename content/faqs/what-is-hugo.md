@@ -10,6 +10,8 @@ categories: faqs
 
 Hugo websites have been gaining momentum in recent years. With the rise of static sites and their use for web development, Hugo websites have become the go-to choice for many developers. In this blog, I'll be uncovering the magic of Hugo websites and showing you how you can develop one of your own today!
 
+{{< toc >}}
+
 ## Why Use HUGO as an Static Website Generator
 At its core, Hugo is an open-source static site generator. It is written in Go, a programming language developed at Google. Hugo is used to generate static webpages from markdown files. This means that instead of using a database, which can be slow and resource-intensive, Hugo relies on the simplicity of markdown files and generating static webpages. This makes Hugo websites incredibly fast, secure, and reliable.
 
