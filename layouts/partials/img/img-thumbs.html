@@ -12,7 +12,7 @@
     {{ if or ($isJPG) ($isJPEG) ($isPNG) }}
 
         {{ $tinyw := "155x webp" }}
-        {{ $smallw := "570 webp" }}
+        {{ $smallw := "570x webp" }}
         {{ $originw := (printf "%dx webp" $ftimgsrc.Width) }}
     
         {{ $data := newScratch }}
